@@ -8,10 +8,10 @@ import {
 } from "@xyflow/react";
 
 import "@xyflow/react/dist/style.css";
-import { useDnD } from "./DnDContext";
+import { useDnD } from "../DnDContext";
 import NodePalette from "./NodePalette";
 import EditNodeModal from "./EditNodeModal";
-import { WorkflowContext } from "./workFlowContext";
+import { WorkflowContext } from "../workFlowContext";
 import { nodeTypes } from "./CustomNodes";
 
 const getId = () => `dndnode_${Date.now()}`;
