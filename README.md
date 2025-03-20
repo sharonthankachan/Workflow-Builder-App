@@ -18,7 +18,7 @@ Before running the application, ensure you have installed:
 
 ### 1️⃣ Clone the Repository
 ```sh
-git clone https://github.com/sharonthankachan/Workflow-Builder-App.git
+git clone https://github.com/sharonthankachan/Workflow-Builder-App.git workflow-builder
 cd workflow-builder
 ```
 
