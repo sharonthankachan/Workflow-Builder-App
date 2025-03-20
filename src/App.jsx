@@ -1,10 +1,11 @@
 import { ReactFlowProvider } from "@xyflow/react";
 import "./App.css";
 import { DnDProvider } from "./DnDContext";
-import WorkflowCanvas from "./WorkflowCanvas";
+import WorkflowCanvas from "./components/WorkflowCanvas";
 import WorkflowProvider from "./workFlowContext";
 
-WorkflowCanvas;
+
+WorkflowCanvas
 
 const App = () => {
   return (
