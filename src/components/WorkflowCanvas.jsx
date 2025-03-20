@@ -64,7 +64,6 @@ const WorkflowCanvas = () => {
     );
   };
 
-
   const onReconnect = (oldEdge, newConnection) => {
     setEdges((eds) => eds.map((edge) => (edge.id === oldEdge.id ? { ...edge, ...newConnection } : edge)));
   };

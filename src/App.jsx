@@ -4,9 +4,6 @@ import { DnDProvider } from "./DnDContext";
 import WorkflowCanvas from "./components/WorkflowCanvas";
 import WorkflowProvider from "./workFlowContext";
 
-
-WorkflowCanvas
-
 const App = () => {
   return (
     <WorkflowProvider>
