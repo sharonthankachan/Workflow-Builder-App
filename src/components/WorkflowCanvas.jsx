@@ -64,6 +64,15 @@ const WorkflowCanvas = () => {
     );
   };
 
+
+  const onReconnect = (oldEdge, newConnection) => {
+    setEdges((eds) => eds.map((edge) => (edge.id === oldEdge.id ? { ...edge, ...newConnection } : edge)));
+  };
+
+  const onReconnectStart = (event, edge) => {
+    console.log("Edge update started:", edge);
+  };
+  
   const onDeleteNode = (id) => {
     setNodes((nodes) => nodes.filter((node) => node.id !== id));
   };
@@ -95,6 +104,10 @@ const WorkflowCanvas = () => {
             fitView
             style={{ backgroundColor: "#F3F4F6", margin: "0" }}
             nodeTypes={nodeTypes}
+            edgesFocusable={true}
+            elementsSelectable={true}
+            onReconnect={onReconnect}
+            onReconnectStart={onReconnectStart}
           >
             <Controls />
             <Background />

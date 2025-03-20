@@ -6,6 +6,7 @@ A **Drag-and-Drop Workflow Builder** built using **React** and **@xyflow/react**
 - Drag and drop nodes to create workflows.
 - Connect nodes with edges.
 - Edit and delete nodes.
+- Reconnects the edges.
 - Save workflows locally.
 
 

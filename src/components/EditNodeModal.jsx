@@ -29,7 +29,6 @@ const EditNodeModal = ({ node, onClose, onUpdate, onDelete }) => {
   const handleDelete = () => {
     onDelete(node.id);    
     onClose();
-    alert(` ${node.data.label} deleted successfully!`);
   };
 
   return (
